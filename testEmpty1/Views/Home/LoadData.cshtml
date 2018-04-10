@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+@using System.Net.Http
+@model testEmpty1.Models.Repository
+@*@inject HttpClient http*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width"/> 
+    <title>Data</title>
+</head>
+<body>
+<div>
+    <h1>hello,@Model.Name</h1>
+
+</div>
+</body>
+</html>
+
+@functions
+{
+
+//    WeatherForecast[] forecasts;
+//
+//    protected override async Task OnInitAsync()
+//    {
+//        forecasts = await http.get.GetJsonAsync<WeatherForecast[]>("http://localhost:8080/api/banners");
+//    }
+//
+//    class WeatherForecast
+//    {
+//        public int id { get; set; }
+//        public string banner { get; set; }
+//        public string describs { get; set; }
+//        public int isdelete { get; set; }
+//    }
+
+}
