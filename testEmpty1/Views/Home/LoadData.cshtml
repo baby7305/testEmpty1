@@ -2,7 +2,8 @@
     Layout = null;
 }
 @using System.Net.Http
-@model testEmpty1.Models.Repository
+@using testEmpty1.Models
+@model List<testEmpty1.Models.Repository>
 @*@inject HttpClient http*@
 
 <!DOCTYPE html>
@@ -15,7 +16,11 @@
 </head>
 <body>
 <div>
-    <h1>hello,@Model.Name</h1>
+    this is a list:<br/>
+    @foreach (Repository repository in Model)
+    {
+        <span>@repository.Name</span><br/>
+    }
 
 </div>
 </body>

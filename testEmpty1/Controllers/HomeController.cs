@@ -24,7 +24,7 @@ namespace testEmpty1.Controllers
         {
             var repositories = ProcessRepositories().Result;
             var repo1 = repositories.First();
-            return View(repo1);
+            return View(repositories);
         }
 
         private static async Task<List<Repository>> ProcessRepositories()
